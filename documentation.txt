@@ -1,0 +1,11 @@
+For this project I created 2 priority queues. one to retrieve max sqaure footage and one to retrieve minimum rent price to ensure O(logN) runtime whenever a user add, update, and delete. each priority queue is distinguished by a char identifier 
+
+with heap backed data structure, using horner hashing for indexing it will hash the input based on address and apt number, the downside to this is when 2 apartments have same street address and apt number but in 2 different cities. it'll cause collision but that's very rare chance in reality. 
+
+the only linearity in my code is whenever the heap is full and request a resize. but this shouldn't affect the overall runtime because my heap initiates at size of 500
+
+when run the program, it will load apartment.txt and display a list of options to user backed in switch case method that calls corrosponding operation by the user input a range of numbers [1 to 8]
+
+when adding, updating, and removing an input, a call is made enssure priority queue properties are met for both queues.
+
+
